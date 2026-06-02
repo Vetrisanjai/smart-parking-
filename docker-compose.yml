@@ -1,0 +1,11 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: smart-parking-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - smart_parking_data:/data/db
+
+volumes:
+  smart_parking_data:
